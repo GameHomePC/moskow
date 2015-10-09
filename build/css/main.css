@@ -488,7 +488,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 100%;
-  width: 396px; }
+  width: 370px; }
   .slider-header .img-slider:after, .slider-header .img-slider:before {
     position: absolute;
     z-index: 10; }
