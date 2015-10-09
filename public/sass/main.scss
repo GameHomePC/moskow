@@ -86,9 +86,54 @@
   float: left;
 }
 
+.slider-header {
+  .item {
+    height: 202px;
+  }
+  
+  .img-slider {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 396px;
+
+    &:after, &:before {
+      position: absolute;
+      z-index: 10;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      width: 83px;
+      height: 202px;
+      background: url("../images/slider-mask-left.png") no-repeat;
+      content: "";
+    }
+
+    &:after {
+      top: 0;
+      right: 0;
+      width: 104px;
+      height: 202px;
+      background: url("../images/slider-mask-right.png") no-repeat;
+      content: "";
+    }
+
+    img {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+    }
+  }
+}
+
 .content-slider {
+  position: relative;
   margin-left: -50px;
   margin-top: 40px;
+  z-index: 15;
 
   h3 {
     font-size: 41px;
