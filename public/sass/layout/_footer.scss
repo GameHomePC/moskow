@@ -1,5 +1,9 @@
 .footer {
-    padding: 30px 84px;
+    padding: 30px 0;
+    
+    .wrapper {
+        padding: 0 85px;
+    }
 }
 
 .footerTitle {
@@ -26,6 +30,7 @@
     &:last-of-type { padding-right: 0; }
 
     img {
+        position: relative;
         float: left;
     }
 
@@ -40,6 +45,10 @@
         color: #0d76bf;
         line-height: 16px;
         text-align: left;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -51,7 +60,7 @@
 
 .footerBottom__left {
     float: left;
-    width: 50%;
+    width: 40%;
     padding-left: 135px;
     box-sizing: border-box;
 
@@ -59,6 +68,7 @@
         font-size: 12px;
         color: #6a8190;
         margin-top: 20px;
+        line-height: normal;
         
         &:first-child { margin-top: 0; }
 
@@ -72,11 +82,13 @@
 
 .footerBottom__right {
     float: left;
-    width: 50%;
+    width: 60%;
 }
 
 /* footerMenu */
 .footerMenu {
+    padding-left: 85px;
+    box-sizing: border-box;
     @include clearfix;
 
     li {
@@ -100,17 +112,19 @@
 /* footerContact */
 .footerContact {
     margin-top: 20px;
+    padding-left: 80px;
+    box-sizing: border-box;
     @include clearfix;
 }
 
 .footerContact__left {
     float: left;
-    width: 50%;
+    width: 65%;
 }
 
 .footerContact__right {
     float: left;
-    width: 50%;
+    width: 35%;
 }
 
 .footerContact__phone {
@@ -143,6 +157,8 @@
     font-size: 15px;
     color: #135c99;
     margin-bottom: 10px;
+
+    &:hover { text-decoration: none; }
 
     &:before {
         position: absolute;
