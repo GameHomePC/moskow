@@ -15,6 +15,7 @@
 
 .img-w-max {
     position: relative;
+    overflow: hidden;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
@@ -58,6 +59,7 @@
 
             &:after, &:before {
                 position: absolute;
+                z-index: 10;
                 content: "";
             }
 

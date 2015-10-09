@@ -292,6 +292,7 @@ body {
 
 .img-w-max {
   position: relative;
+  overflow: hidden;
   top: 50%;
   -webkit-transform: translateY(-50%);
      -moz-transform: translateY(-50%);
@@ -332,6 +333,7 @@ body {
       height: 100px; }
       .slider-objects-list div.item .slider-object-img:after, .slider-objects-list div.item .slider-object-img:before {
         position: absolute;
+        z-index: 10;
         content: ""; }
       .slider-objects-list div.item .slider-object-img:after {
         background: url("../images/left-bottom.png") no-repeat;
@@ -345,6 +347,68 @@ body {
         height: 59px;
         right: 0;
         top: 0; }
+
+.all-articles {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 17px; }
+  .all-articles a {
+    font-family: Arial;
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+    background: #1c4d6f;
+    padding: 12px 25px; }
+
+.articles {
+  position: relative;
+  z-index: 2;
+  margin: 18px 36px; }
+  .articles li {
+    display: block;
+    margin-bottom: 30px; }
+    .articles li:last-child, .articles li.last {
+      margin-bottom: 0; }
+    .articles li:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+  .articles:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .articles .article-title, .articles .article-content {
+    float: left; }
+  .articles .article-content {
+    width: 710px;
+    margin-left: 30px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: Arial, sans-serif;
+    padding: 5px; }
+  .articles .article-title {
+    display: block;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(27, 86, 120, 0.8)), to(rgba(26, 53, 82, 0.8)));
+    background: -webkit-linear-gradient(bottom, rgba(27, 86, 120, 0.8), rgba(26, 53, 82, 0.8));
+    background: -moz-linear-gradient(bottom, rgba(27, 86, 120, 0.8), rgba(26, 53, 82, 0.8));
+    background: -o-linear-gradient(bottom, rgba(27, 86, 120, 0.8), rgba(26, 53, 82, 0.8));
+    background: linear-gradient(bottom, rgba(27, 86, 120, 0.8), rgba(26, 53, 82, 0.8));
+    font-size: 18px;
+    line-height: 25px;
+    font-family: Arial;
+    text-decoration: underline;
+    color: #ffffff;
+    width: 230px;
+    padding: 20px 25px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; }
 
 .header {
   position: relative;
@@ -462,62 +526,3 @@ body {
     bottom: 0;
     background: url("../images/shadow-bottom.png") repeat-x;
     height: 82px; }
-
-.all-articles {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  margin-bottom: 17px; }
-  .all-articles a {
-    font-family: Arial;
-    display: inline-block;
-    font-size: 18px;
-    color: #ffffff;
-    background: #1c4d6f;
-    padding: 12px 25px; }
-
-.articles {
-  position: relative;
-  z-index: 2;
-  margin: 18px 36px; }
-  .articles li {
-    display: block;
-    margin-bottom: 30px; }
-    .articles li:last-child, .articles li.last {
-      margin-bottom: 0; }
-    .articles li:after {
-      content: ".";
-      display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden; }
-  .articles:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden; }
-  .articles .article-title, .articles .article-content {
-    float: left; }
-  .articles .article-content {
-    width: 710px;
-    margin-left: 30px;
-    color: #000000;
-    font-size: 18px;
-    line-height: 20px;
-    font-family: Arial, sans-serif;
-    padding: 5px; }
-  .articles .article-title {
-    display: block;
-    background: url("../images/btn.png") repeat-x;
-    font-size: 18px;
-    line-height: 25px;
-    font-family: Arial;
-    text-decoration: underline;
-    color: #ffffff;
-    height: 92px;
-    width: 230px;
-    padding: 20px 25px;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box; }

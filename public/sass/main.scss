@@ -9,6 +9,7 @@
 
 /* modules */
 @import "modules/slider-objects-list";
+@import "modules/article";
 
 .header {
   position: relative;
@@ -165,66 +166,4 @@
   }
 }
 
-.all-articles {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  margin-bottom: 17px;
 
-  a {
-    font-family: Arial;
-    display: inline-block;
-    font-size: 18px;
-    color: #ffffff;
-    background: #1c4d6f;
-    padding: 12px 25px;
-  }
-}
-
-.articles {
-  position: relative;
-  z-index: 2;
-  margin: 18px 36px;
-
-  li {
-    display: block;
-    margin-bottom: 30px;
-
-    &:last-child, &.last {
-      margin-bottom: 0;
-    }
-
-    @include clearfix;
-  }
-
-  @include clearfix;
-
-  .article-title, .article-content {
-    float: left;
-  }
-
-  .article-content {
-    width: 710px;
-    margin-left: 30px;
-    color: #000000;
-    font-size: 18px;
-    line-height: 20px;
-    font-family: Arial, sans-serif;
-    padding: 5px;
-  }
-
-  .article-title {
-    display: block;
-    background: url('../images/btn.png') repeat-x;
-    font-size: 18px;
-    line-height: 25px;
-    font-family: Arial;
-    text-decoration: underline;
-    color: #ffffff;
-    height: 92px;
-    width: 230px;
-    padding: 20px 25px;
-    box-sizing: border-box;
-  }
-
-}
