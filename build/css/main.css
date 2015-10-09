@@ -103,6 +103,8 @@ body {
   margin-bottom: 20px; }
 
 .footerList {
+  display: table;
+  width: 100%;
   font-size: 0;
   text-align: justify;
   text-justify: newspaper;
