@@ -15,7 +15,6 @@
 
 .img-w-max {
     position: relative;
-    overflow: hidden;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
@@ -55,6 +54,7 @@
 
         .slider-object-img {
             position: relative;
+            overflow: hidden;
             height: 100px;
 
             &:after, &:before {
