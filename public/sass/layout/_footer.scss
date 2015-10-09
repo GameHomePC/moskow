@@ -1,5 +1,5 @@
 .footer {
-    padding: 30px 0;
+    padding: 30px 84px;
 }
 
 .footerTitle {
@@ -96,3 +96,88 @@
         }
     }
 }
+
+/* footerContact */
+.footerContact {
+    margin-top: 20px;
+    @include clearfix;
+}
+
+.footerContact__left {
+    float: left;
+    width: 50%;
+}
+
+.footerContact__right {
+    float: left;
+    width: 50%;
+}
+
+.footerContact__phone {
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .small {
+        font-size: 20px;
+        color: #639ab8;
+    }
+
+    .big {
+        font-size: 36px;
+        color: #0a527a;
+    }
+}
+
+.footerContact__address {
+    font-size: 15px;
+    color: #6a8398;
+    margin-top: 13px;
+    line-height: normal;
+}
+
+.footerContact__title {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #135c99;
+    margin-bottom: 10px;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: -25px;
+        background: url("../images/footer-icon-message.png") no-repeat;
+        width: 17px;
+        height: 17px;
+        content: "";
+    }
+}
+
+.footerContact__description {
+    font-size: 11px;
+    color: #6b859a;
+    line-height: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
