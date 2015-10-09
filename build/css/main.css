@@ -292,7 +292,6 @@ body {
 
 .img-w-max {
   position: relative;
-  overflow: hidden;
   top: 50%;
   -webkit-transform: translateY(-50%);
      -moz-transform: translateY(-50%);
@@ -330,6 +329,7 @@ body {
         margin-top: 10px; }
     .slider-objects-list div.item .slider-object-img {
       position: relative;
+      overflow: hidden;
       height: 100px; }
       .slider-objects-list div.item .slider-object-img:after, .slider-objects-list div.item .slider-object-img:before {
         position: absolute;
