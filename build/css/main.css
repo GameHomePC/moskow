@@ -136,9 +136,21 @@ body {
     visibility: hidden; }
   .footerList__item:last-of-type {
     padding-right: 0; }
-  .footerList__item img {
+  .footerList__item .footerList__images {
     position: relative;
-    float: left; }
+    overflow: hidden;
+    float: left;
+    height: 61px;
+    width: 61px; }
+    .footerList__item .footerList__images img {
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+           -o-transform: translateX(-50%);
+              transform: translateX(-50%);
+      height: 100%; }
   .footerList__item a {
     display: block;
     float: left;

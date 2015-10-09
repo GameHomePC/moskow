@@ -30,9 +30,19 @@
 
     &:last-of-type { padding-right: 0; }
 
-    img {
+    .footerList__images {
         position: relative;
+        overflow: hidden;
         float: left;
+        height: 61px;
+        width: 61px;
+
+        img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+        }
     }
 
     a {
