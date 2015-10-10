@@ -5,7 +5,7 @@ $(function(){
   var arrowNextObj = $('#arrow-next-obj');
 
   var owlCarusel = carusel.owlCarousel({
-    autoPlay: 6000, //Set AutoPlay to 3 seconds
+    autoPlay: 10000, 
     items : 4,
     dragBeforeAnimFinish: false,
     mouseDrag: false,
