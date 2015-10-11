@@ -10,6 +10,10 @@ body {
 
 .window {
     position: relative;
+    min-height: 100%;
+    padding-bottom: 364px;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 .wrapper {
