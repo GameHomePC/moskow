@@ -29,7 +29,8 @@ $(function(){
   var arrowNextHeader = $('#arrow-next-header');
 
   var owlHeader = sliderHeader.owlCarousel({
-    dragBeforeAnimFinish: false,
+      autoPlay: 10000,
+      dragBeforeAnimFinish: false,
     mouseDrag: false,
     touchDrag: false,
     pagination: false,
@@ -48,5 +49,14 @@ $(function(){
     e.preventDefault();
     owlHeader.next();
   });
+
+
+    $('.good-page-tocart-block').each(function(){
+        var self = $(this);
+        var html = self.find('*');
+        if (!html.length){
+            self.hide();
+        }
+    });
 
 });

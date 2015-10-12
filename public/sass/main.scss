@@ -37,9 +37,12 @@ s {
   width: 219px;
   height: 210px;
   cursor: pointer;
+  z-index: 3;
 }
 
 .nav {
+  position: relative;
+  z-index: 2;
 
   ul {
     position: relative;
@@ -83,6 +86,8 @@ s {
 }
 
 .slider {
+  position: relative;
+  z-index: 2;
   height: 202px;
   overflow: hidden;
 }
@@ -390,6 +395,11 @@ s {
     }
 
     .object-img-wrap {
+      a {
+        display: block;
+        height: 200px;
+        overflow: hidden;
+      }
       img {
         display: block;
         width: 100%;
@@ -404,6 +414,8 @@ s {
       font-weight: bold;
       font-size: 12px;
       color: #00549f;
+      text-align: center;
+      line-height: 18px;
     }
   }
 }
@@ -442,7 +454,9 @@ s {
   font-size: 14px;
   line-height: 25px;
   color: #282828;
-  margin: 0 30px 20px;
+  margin: 20px 30px;
+
+  @include clearfix;
 
   * {
     font-family: "Myriad Pro", sans-serif !important;
@@ -533,21 +547,110 @@ s {
 
 .area-calc {
   @include clearfix;
+
+  h3 {
+    text-align: left;
+  }
 }
 
 .fields1, .fields2 {
   label {
     display: block;
   }
+
+  input {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 14px;
+    padding: 5px;
+  }
 }
 
-.good-page-tocart-block {
-  margin-top: 20px;
-  display: table;
-  width: 100%;
 
-  img, span {
+.good-page-tocart-block {
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #888;
+
+  &:empty {
+    display: none;
+  }
+
+  .shk-item {
+    width: 100%;
+    margin-top: 15px;
+    display: block;
+  }
+
+  .good-name {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 5px;
+  }
+
+
+  &>img, &>span, &>a {
     display: inline-block;
     vertical-align: top;
+  }
+
+  /*
+  &>a {
+    width: 30%;
+    height: 90px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  */
+
+  &>a {
+    display: inline-block;
+  }
+
+  .isubmit {
+    display: block;
+    margin: 5px 0;
+  }
+
+  /*
+  &>img {
+    height: 90px;
+    box-sizing: border-box;
+    width: 30%;
+  }
+  */
+
+  .product-tocart {
+    margin: 0;
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+
+.card {
+  position: relative;
+  z-index: 5;
+  font-size: 12px;
+  
+  .shop-cart {
+    background-position: 10px center;
+    margin: 0;
+    padding: 10px 10px 10px 42px;
+    width: auto;
+    border-radius: 0 0 0 10px;
+
+    a {
+      color: #0f7cc1;
+    }
+
+    &.empty {
+      margin: 0;
+    }
   }
 }
