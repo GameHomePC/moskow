@@ -810,12 +810,27 @@ s {
   .content-main p {
     padding: 10px 0; }
   .content-main img {
+    padding: 0; }
+  .content-main iframe {
     padding: 5px; }
   .content-main a {
-    color: #00549f !important; }
+    color: #00549f; }
   .content-main table td, .content-main table th {
     padding: 5px;
     border: 1px solid #e1e1e1; }
+  .content-main .m-content:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .content-main .m-content > a {
+    float: left;
+    padding: 0 10px 0 0; }
+    .content-main .m-content > a img {
+      display: block; }
+  .content-main .m-content > p {
+    padding: 0; }
 
 .form input, .form textarea {
   font-family: "Myriad Pro", sans-serif;
@@ -825,14 +840,163 @@ s {
   color: red;
   font-size: 11px; }
 
+.item-l h3 {
+  text-align: left; }
+
 .foto-price {
-  display: block; }
+  font-size: 0;
+  display: block;
+  margin-bottom: 20px; }
+  .foto-price .foto {
+    line-height: normal; }
+    .foto-price .foto a {
+      display: inline-block;
+      padding-right: 2px; }
+      .foto-price .foto a img {
+        display: block; }
 
-.calc-block1 {
-  float: left; }
+.materials {
+  padding: 0;
+  margin: 0; }
+  .materials .material-item {
+    margin-bottom: 20px; }
+    .materials .material-item:last-child {
+      margin-bottom: 0; }
+    .materials .material-item .material-hidden-info {
+      display: none; }
+    .materials .material-item:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .materials .material-item .material-img {
+      display: block;
+      padding: 0 10px 0 0; }
+      .materials .material-item .material-img img {
+        width: auto;
+        display: block; }
+    .materials .material-item .material-img, .materials .material-item .content-material {
+      float: left; }
+    .materials .material-item .product-tocart {
+      margin: 0;
+      padding: 0;
+      border: none; }
+      .materials .material-item .product-tocart div.price {
+        display: none; }
+      .materials .material-item .product-tocart .isubmit {
+        border: none;
+        background: #5b9bd5;
+        -webkit-border-radius: 5px 0 5px 0;
+           -moz-border-radius: 5px 0 5px 0;
+                border-radius: 5px 0 5px 0;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-top: 10px; }
 
-.calc-block2 {
-  float: right; }
+.top-tovar:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.title-tovar {
+  float: left;
+  width: 70%; }
+
+.btn-buy {
+  float: right;
+  width: 25%;
+  text-align: right; }
+  .btn-buy .product-tocart {
+    margin: 0;
+    padding: 0;
+    border: none; }
+  .btn-buy div.price {
+    display: none; }
+  .btn-buy .shk-item {
+    display: inline-block; }
+  .btn-buy .isubmit {
+    font-size: 18px;
+    border: none;
+    background: #5b9bd5;
+    -webkit-border-radius: 5px 0 5px 0;
+       -moz-border-radius: 5px 0 5px 0;
+            border-radius: 5px 0 5px 0;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: inline-block; }
+
+.calculator_new {
+  display: none; }
+  .calculator_new h5 {
+    padding: 10px 0; }
+  .calculator_new .calc-block1 {
+    float: left; }
+  .calculator_new .calc-block2 {
+    float: left;
+    margin-left: 50px; }
+  .calculator_new .fields1 label, .calculator_new .fields2 label {
+    display: block; }
+  .calculator_new .fields1 input, .calculator_new .fields2 input {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px 0; }
+
+.description_tabs:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.description_tabs .tab {
+  display: block;
+  width: 50%;
+  float: left;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+  .description_tabs .tab.left {
+    padding-right: 5px; }
+  .description_tabs .tab.right {
+    padding-left: 5px; }
+  .description_tabs .tab .inner {
+    position: relative;
+    height: 50px;
+    font-size: 0;
+    width: 100%;
+    display: table;
+    background: #0070c0;
+    border: 1px solid #002060;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #fff;
+    text-decoration: none; }
+    .description_tabs .tab .inner:before {
+      position: absolute;
+      background: url("../images/border.jpg");
+      width: 9px;
+      height: 9px;
+      top: -1px;
+      right: -1px;
+      content: ""; }
+    .description_tabs .tab .inner span {
+      font-family: "Myriad Pro", sans-serif;
+      font-size: 14px;
+      display: inline-block;
+      vertical-align: middle; }
 
 .area-calc:after {
   content: ".";
@@ -843,14 +1007,6 @@ s {
 
 .area-calc h3 {
   text-align: left; }
-
-.fields1 label, .fields2 label {
-  display: block; }
-
-.fields1 input, .fields2 input {
-  font-family: "Myriad Pro", sans-serif;
-  font-size: 14px;
-  padding: 5px; }
 
 .good-page-tocart-block {
   margin: 20px 0;
