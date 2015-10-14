@@ -31,10 +31,10 @@ s {
 
 .logo {
   position: absolute;
-  background: url('../images/logo.png') no-repeat;
+  background: url('../images/logo2.png') no-repeat;
   top: 37px;
   right: 84px;
-  width: 219px;
+  width: 209px;
   height: 210px;
   cursor: pointer;
   z-index: 3;
@@ -95,7 +95,7 @@ s {
 
 .slider-wrap {
   position: relative;
-  margin-left: 102px;
+  margin-left: 34px; // 102px;
   width: 650px;
 
   @include clearfix;
@@ -114,7 +114,7 @@ s {
     position: relative;
     overflow: hidden;
     height: 100%;
-    width: 370px;
+    width: 450px;
 
     &:after, &:before {
       position: absolute;
@@ -153,7 +153,7 @@ s {
   margin-left: -50px;
   margin-top: 24px;
   z-index: 15;
-  width: 300px;
+  width: 235px;
 
   h3 {
     font-size: 23px;
@@ -209,7 +209,7 @@ s {
 
 .article-left {
   float: left;
-  width: 240px;
+  width: 220px;
 
   ul {
 
@@ -234,7 +234,7 @@ s {
       }
 
       a {
-        font-size: 14px;
+        font-size: 16px;
         font-family: "Myriad Pro", sans-serif;
         display: block;
         color: #0d76bf;
@@ -249,6 +249,12 @@ s {
   height: 100%;
 }
 
+.img-w-max {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .article-right {
   float: right;
   width: 685px;
@@ -256,7 +262,7 @@ s {
 }
 
 .img-article {
-  height: 265px;
+  height: 365px;
   position: relative;
   z-index: 1;
 }
@@ -307,13 +313,17 @@ s {
   z-index: 2;
   background: rgba(23, 60, 87, 0.8);
   font-size: 0;
+    overflow: hidden;
 
-  p {
+  p.text_anons {
     display: inline-block;
     vertical-align: middle;
     color: #fff;
-    font-size: 13px;
+    font-size: 14px;
     padding: 0 20px;
+      height: 76%;
+      box-sizing: border-box;
+      overflow: hidden;
   }
 
 }
@@ -321,13 +331,16 @@ s {
 .vvva {
   li {
     display: block;
-    padding: 6px;
-    padding-bottom: 0;
+    margin: 0 6px 6px;
+
+      &.last, &:last-child {
+          margin-bottom: 0;
+      }
 
     .vvva-text {
       background: #fff;
       height: 100%;
-      font-size: 12px;
+      font-size: 14px;
       padding: 8px;
     }
   }
@@ -341,13 +354,21 @@ s {
   right: 0;
   background: rgba(23, 60, 87, 0.8);
   z-index: 3;
+    overflow: hidden;
+    padding: 6px 6px 6px 0;
+    box-sizing: border-box;
+}
+
+.text-scroll {
+    overflow-y: scroll;
+    height: 100%;
 }
 
 
 .container {
 
   &.obj {
-    margin-top: -32px;
+    margin-top: 0; // -32px
     background-color: #fff;
     background-position: 0 50px;
     &:before {
@@ -375,6 +396,10 @@ s {
   display: table;
   width: 100%;
   font-size: 0;
+
+    &.search {
+        margin-left: 0;
+    }
 
   li.object-item-block {
     width: 100%;
@@ -418,13 +443,14 @@ s {
       }
     }
     .conecnte-object-block {
+        font-family: "Myriad Pro", sans-serif;
       display: inline-block;
       vertical-align: top;
       width: 800px;
       padding: 0 15px;
       box-sizing: border-box;
-      line-height: 14px;
-      font-size: 12px;
+      line-height: 18px;
+      font-size: 16px;
     }
   }
 
@@ -718,19 +744,83 @@ s {
 
 }
 
-.top-tovar {
+.header_m {
+    position: relative;
+    z-index: 1;
+}
+
+.contact_header_main {
+    position: relative;
+    z-index: 2;
+    margin-top: -34px;
+}
+
+.contact_header {
+    font-family: "Myriad Pro", sans-serif;
+
     @include clearfix;
 }
 
-.title-tovar {
+.header_inner_contact {
+    width: 50%;
     float: left;
-    width: 70%;
+    box-sizing: border-box;
+
+    &.left {
+        padding-right: 1px;
+    }
+
+    &.right {
+        padding-left: 1px;
+    }
+}
+
+.item_contact_header {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: block;
+    background: #0070c0;
+    /* border: 1px solid #002060; */
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+
+    span {
+        font-size: 18px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.header_phone {
+
+}
+
+.header_address {
+}
+
+.top-tovar {
+//    @include clearfix;
+}
+
+.title-tovar {
+//    float: left;
+//    width: 70%;
+}
+
+.hide-block {
+    display: none;
 }
 
 .btn-buy {
-    float: right;
-    width: 25%;
-    text-align: right;
+//    float: right;
+//    width: 25%;
+//    text-align: right;
+    margin: 20px 0;
 
     .product-tocart {
         margin: 0;

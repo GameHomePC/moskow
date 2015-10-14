@@ -29,7 +29,7 @@ $(function(){
     var arrowNextHeader = $('#arrow-next-header');
 
     var owlHeader = sliderHeader.owlCarousel({
-        autoPlay: 10000,
+        autoPlay: 3000,
         dragBeforeAnimFinish: false,
         mouseDrag: false,
         touchDrag: false,
